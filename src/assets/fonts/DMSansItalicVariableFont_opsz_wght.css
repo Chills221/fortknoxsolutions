@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'DMSansItalicVariableFont_opsz_wght';
+    src: url('fonts/DMSansItalicVariableFont_opsz_wght.eot');
+    src: url('fonts/DMSansItalicVariableFont_opsz_wght.eot') format('embedded-opentype'),
+         url('fonts/DMSansItalicVariableFont_opsz_wght.woff2') format('woff2'),
+         url('fonts/DMSansItalicVariableFont_opsz_wght.woff') format('woff'),
+         url('fonts/DMSansItalicVariableFont_opsz_wght.ttf') format('truetype'),
+         url('fonts/DMSansItalicVariableFont_opsz_wght.svg#DMSansItalicVariableFont_opsz_wght') format('svg');
+}

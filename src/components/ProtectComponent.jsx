@@ -1,0 +1,39 @@
+import React from "react";
+import Image from "next/image";
+import Button from "./Elements/Button";
+
+
+
+
+
+
+
+const ProtectComponent =()=>{
+    return (
+        <>
+        <div className="w-full md:py-16 py-10 bg-black">
+            <div className="max-w-6xl mx-auto px-4">
+                <div className=" flex md:flex-row flex-col gap-10 items-center">
+                    <div className="md:w-[55%] w-full flex flex-col gap-4">
+                        <h2 className="lg:text-7xl md:text-5xl text-3xl text-[#fcf8ef] leading-[1.2]">Protect What Matters Most.</h2>
+                        <p className="lg:text-3xl md:text-2xl text-xl text-white">Fort Konx Solutions Provides premium security Film, reinforcements,and advanced locks to keep your home and bussiness safe.</p>
+                        <div className="inline-flex mt-6">
+                        <Button text="Get a Free Quite" />
+                        </div>
+                    </div>
+                    <div className="md:w-[45%] w-full">
+                    <Image
+                          src={`/images/protect-img.jpg`}
+                          alt="testimonials"
+                          width={500}
+                          height={300}
+                          className="w-full  h-[500px] object-cover  "
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+        </>
+    );
+};
+export default ProtectComponent;

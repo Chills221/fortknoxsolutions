@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'DMSansRegular';
+    src: url('fonts/DMSansRegular.eot');
+    src: url('fonts/DMSansRegular.eot') format('embedded-opentype'),
+         url('fonts/DMSansRegular.woff2') format('woff2'),
+         url('fonts/DMSansRegular.woff') format('woff'),
+         url('fonts/DMSansRegular.ttf') format('truetype'),
+         url('fonts/DMSansRegular.svg#DMSansRegular') format('svg');
+}
