@@ -23,3 +23,19 @@ body {
   font-size: 16px;
   line-height: 1.625;
 }
+
+
+
+
+#sideMenu {height: 100%;position: fixed;left: 0;width: 100%;margin-top: 0px;transform: translateX(-100%);transition: transform 250ms ease-in-out;background: #fff;z-index: 1;top: 0; overflow-y: scroll;}
+input[type="checkbox"]:checked~#sideMenu {transform: translateX(0);}
+input[type=checkbox] {transition: all 0.3s;box-sizing: border-box; display: none;}
+.sideIconToggle {transition: all 0.3s;box-sizing: border-box;cursor: pointer;position: absolute;z-index: 99; height: 100%;width: 100%;top: 35px;right: 20px;height: 22px;width: 22px;}
+.spinner {transition: all 0.3s; box-sizing: border-box;position: absolute;height: 3px;width: 100%;background-color: #f6b63f;}
+.horizontal {transition: all 0.3s;box-sizing: border-box;position: relative;float: left;margin-top: 3px;}
+.diagonal.part-1 {position: relative;transition: all 0.3s; box-sizing: border-box; float: left;}
+.diagonal.part-2 {transition: all 0.3s;box-sizing: border-box;position: relative;float: right; margin-top: 3px;}
+input[type=checkbox]:checked~.sideIconToggle>.horizontal {transition: all 0.3s; box-sizing: border-box; opacity: 0;}
+input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-1 {transition: all 0.3s; width:100%; box-sizing: border-box;transform: rotate(135deg);margin-top: 8px; background-color: #f6b63f;}
+input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {transition: all 0.3s; width:100%; box-sizing: border-box;transform: rotate(-135deg); margin-top: -9px; background-color: #f6b63f;}
+.spinner.diagonal.part-1, .spinner.diagonal.part-2 {width:60%;}

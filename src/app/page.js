@@ -9,6 +9,7 @@ import TestimonialsComponent from '@/components/TestimonialsComponent';
 import ServicesList from '@/components/ServicesList';
 import ContactFormComponent from '@/components/ContactFormComponent';
 import ProtectComponent from '@/components/ProtectComponent';
+import CommertialSecurityComponent from '@/components/CommertialSecurityComponent';
 
 
 export default function Home() {
@@ -16,14 +17,16 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <Hero />        
-        <ServicesComponent />
+        <Hero /> 
+        <ServicesList/>       
+        {/* <ServicesComponent />  */}
         <AboutComponent />
         <ProtectComponent/>
         <FAQComponent />
-        <TestimonialsComponent />
-        <ServicesList/>
-        <CtaComponent />
+        {/* <TestimonialsComponent />  */}
+        <CommertialSecurityComponent/>
+       
+        {/* <CtaComponent /> */}
         <ContactFormComponent/>
       </main>
       <Footer />

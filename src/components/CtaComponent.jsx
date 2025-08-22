@@ -1,7 +1,6 @@
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import Cta_bg from "../../public/images/cta-bg.jpg";
 import Button from './Elements/Button';
 
 const CtaComponent = ({ backgroundImage = '/hero-bg.jpg' }) => {
@@ -32,7 +31,7 @@ const CtaComponent = ({ backgroundImage = '/hero-bg.jpg' }) => {
       <div className="absolute inset-0 z-0 ">
        
          <Image
-            src={`/images/cta-bg.jpg`}
+            src={`/images/cta-bg.webp`}
             alt="cta_bg"
             width={500}
             height={800}
@@ -45,7 +44,7 @@ const CtaComponent = ({ backgroundImage = '/hero-bg.jpg' }) => {
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10 w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 w-full max-w-4xl mx-auto px-4 text-center">
         {/* Newsletter Label */}
         <div className="mb-8">
           <span className="inline-block text-xs sm:text-sm font-semibold text-[#cfb16b] tracking-[0.2em] sm:tracking-[0.25em] uppercase">

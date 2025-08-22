@@ -77,9 +77,9 @@ const ContactFormComponent = () => {
     <div id='contact' className="min-h-screen flex items-center justify-center md:py-16 py-10" style={{ backgroundColor: '#fff' }}>
       <div className="w-full max-w-7xl bg-[#F8F8F8] overflow-hidden lg:p-16 sm:p-8 px-4 py-8">
         <div className='mb-8'>
-          <h4 className='text-base text-[#cfb16b] font-bold'>Get A Quote</h4>
-          <h2 className="text-3xl sm:text-4xl text-black uppercase font-semibold leading-tight py-3 lg:max-w-3xl w-full">
-            Repairing your pro restoring  your peace of mind
+          <p className='text-base text-[#cfb16b] font-semibold '>Let’s Secure Your Home Today</p>
+          <h2 className="text-3xl sm:text-4xl text-black uppercase font-semibold leading-tight py-3 lg:max-w-5xl w-full">
+           Your safety is our priority. Get in touch with us to schedule a free consultation or to learn more about our services.
           </h2>
         </div>
         <div className="flex flex-col lg:flex-row gap-10">
@@ -90,17 +90,17 @@ const ContactFormComponent = () => {
                 {/* Email Field */}
                 <div className='grid sm:grid-cols-2 gap-4'>
                   <div className="flex flex-col">
-                    <label htmlFor="email" className="text-lg font-semibold text-black mb-2">
-                      Your Email
+                    <label htmlFor="Name" className="text-lg font-semibold text-black mb-2">
+                      Name
                     </label>
                     <div className="relative">
                       <input
-                        type="email"
-                        id="email"
-                        name="email"
+                        type="your name"
+                        id="name"
+                        name="your name"
                         value={formData.email}
                         onChange={handleInputChange}
-                        placeholder="Your Email"
+                        placeholder="Your Name"
                         className={`w-full px-4 py-4 pr-12 text-gray-700 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-[#cfb16b] focus:border-transparent transition-all duration-200 ${errors.email ? 'border-red-500' : 'border-gray-200'
                           }`}
                         aria-describedby={errors.email ? "email-error" : undefined}
@@ -120,8 +120,8 @@ const ContactFormComponent = () => {
 
                   {/* Phone Field */}
                   <div className="flex flex-col">
-                    <label htmlFor="phone" className="text-lg font-semibold text-black mb-2">
-                      Your Phone
+                    <label htmlFor="email" className="text-lg font-semibold text-black mb-2">
+                      Email
                     </label>
                     <div className="relative">
                       <input
@@ -130,15 +130,17 @@ const ContactFormComponent = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        placeholder="Your Phone"
+                        placeholder="Your email"
                         className={`w-full px-4 py-4 pr-12 text-gray-700 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-[#cfb16b] focus:border-transparent transition-all duration-200 ${errors.phone ? 'border-red-500' : 'border-gray-200'
                           }`}
                         aria-describedby={errors.phone ? "phone-error" : undefined}
                       />
                       <div className="absolute inset-y-0 right-0 flex items-center pr-4">
-                        <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                        </svg>
+                       
+                         <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
                       </div>
                     </div>
                     {errors.phone && (
@@ -150,18 +152,40 @@ const ContactFormComponent = () => {
                 </div>
 
                 {/* Address Field */}
+                <div className='grid sm:grid-cols-2 gap-4'>
                 <div className="flex flex-col">
-                  <label htmlFor="address" className="text-lg font-semibold text-black mb-2">
-                    Your Address
+                  <label htmlFor="phone" className="text-lg font-semibold text-black mb-2">
+                    phone
                   </label>
                   <div className="relative">
                     <input
                       type="text"
-                      id="address"
-                      name="address"
+                      id="number"
+                      name="number"
                       value={formData.address}
                       onChange={handleInputChange}
-                      placeholder="Your Address"
+                      placeholder="Your number"
+                      className="w-full px-4 py-4 pr-12 text-gray-700 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-[#cfb16b] focus:border-transparent transition-all duration-200"
+                    />
+                    <div className="absolute inset-y-0 right-0 flex items-center pr-4">
+                      <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-col">
+                  <label htmlFor="phone" className="text-lg font-semibold text-black mb-2">
+                    Service interested
+                  </label>
+                  <div className="relative">
+                    <input
+                      type="text"
+                      id="service-interested"
+                      name="service-interested"
+                      value={formData.address}
+                      onChange={handleInputChange}
+                      placeholder="Service interested"
                       className="w-full px-4 py-4 pr-12 text-gray-700 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-[#cfb16b] focus:border-transparent transition-all duration-200"
                     />
                     <div className="absolute inset-y-0 right-0 flex items-center pr-4">
@@ -172,6 +196,9 @@ const ContactFormComponent = () => {
                     </div>
                   </div>
                 </div>
+                </div>
+
+
 
                 {/* Message Field */}
                 <div className="flex flex-col">

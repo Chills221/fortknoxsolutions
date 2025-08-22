@@ -1,34 +1,44 @@
-import { ArrowRight } from 'lucide-react';
-import heroBg from '@/assets/hero-bg.jpg';
 import Button from './Elements/Button';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <section 
-      id="home" 
-      className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url(/images/hero-bg.jpg)` }}
-    >
+    <>
+    <div className="w-full relative">
+        <Image
+                      src={`/images/hero-bg.webp`}
+                      alt="aboutimg"
+                      width={1920}
+                      height={780}
+                     
+                      className="w-full rounded-xl md:block hidden "
+                    />
+                    <Image
+                      src={`/images/hero-mbl.webp`}
+                      alt="aboutimg"
+                      width={800}
+                      height={1200}
+                     
+                      className="w-full lg:h-[1000px] h-[700px] object-cover rounded-xl md:hidden block  "
+                    />
       <div className="absolute inset-0 bg-black/50 w-full h-full"></div>
       
-      <div className="relative z-10 container-custom text-center">
-        <div className="max-w-4xl mx-auto sm:py-0 py-6">
-          <h1 className="sm:text-5xl text-3xl md:text-6xl lg:text-7xl text-white mb-6 leading-[1.2] tracking-[5px] uppercase">
-            We make{' '}
-            <span className="text-gradient">Improving your Home</span>{' '}
-            simple
+      <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center z-10 container-custom text-center">
+        <div className="max-w-7xl mx-auto sm:py-0 py-6 px-4">
+          <h1 className="sm:text-5xl text-3xl md:text-6xl lg:text-7xl text-white mb-6 leading-[1.2] tracking-[5px] uppercase max-w-4xl mx-auto">
+            Protect Your Home Like Fort Knox{' '}
+            
           </h1>
+           <h2 className="sm:text-3xl text-2xl max-w-6xl mx-auto  text-white mb-6 leading-[1.2] tracking-[5px]">
+         At Fort Knox Solutions, we provide comprehensive security for your windows and doors, helping homeowners achieve peace of mind with trusted, affordable solutions.
+            
+          </h2>
           
-          <p className="sm:text-xl text-base md:text-2xl text-white sm:mb-8 mb-4 max-w-2xl mx-auto">
-            Professional window security film, door reinforcements, and advanced lock systems 
-            that transform ordinary houses into secure sanctuaries.
-          </p>         
-        
-          <Button text="Contact Us Now" />
+          <Button text="Book Your Free Security Consultation Today!" />
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 sm:gap-8 gap-6 sm:mt-16  max-w-4xl mx-auto">
+        {/* <div className="grid grid-cols-2 md:grid-cols-4 sm:gap-8 gap-6 sm:mt-16  max-w-4xl mx-auto">
           <div className="text-center">
             <div className="text-3xl md:text-4xl font-semibold text-white mb-2">10+</div>
             <div className="text-white">Years of Experience</div>
@@ -45,9 +55,11 @@ const Hero = () => {
             <div className="text-3xl md:text-4xl font-semibold text-white mb-2">100%</div>
             <div className="text-white">Client Satisfaction</div>
           </div>
-        </div>
+        </div> */}
       </div>
-    </section>
+      </div>
+    
+    </>
   );
 };
 

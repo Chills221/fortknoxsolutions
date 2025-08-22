@@ -8,28 +8,28 @@ const FAQComponent = () => {
 
   const faqData = [
     {
-      question: "1. What security solutions do you offer?",
-      answer: "We specialize in window security film, door reinforcements, and advanced lock systems. Our solutions are designed to transform ordinary houses into secure sanctuaries while maintaining the aesthetic appeal of your home."
+      question: "What is security film and how does it work?",
+      answer: "Security film is a strong, clear layer applied to glass. It helps keep windows intact during impact, making break-ins much more difficult."
     },
     {
-      question: "2. How long does installation take?",
-      answer: "Installation time varies depending on the scope of work. Typically, window security film takes 2-4 hours, door reinforcements take 1-2 hours per door, and lock system upgrades take 30-60 minutes per lock. We provide accurate time estimates during our initial consultation."
+      question: "How long does installation take?",
+      answer: ":Installation time varies depending on the scope of work. Typically, window security film takes 2-4 hours, door reinforcements take 1-2 hours per door, and lock system upgrades take 30-60 minutes per lock. We provide accurate time estimates during our initial consultation."
     },
     {
-      question: "3. Do you provide warranty on your services?",
-      answer: "Yes, we provide comprehensive warranties on all our security solutions. Window security films come with a 10-year warranty, door reinforcements have a 5-year warranty, and lock systems include manufacturer warranties plus our 2-year installation guarantee."
+      question: "Do you only work with residential homes?",
+      answer: " Our main focus is residential security, but we also provide services for commercial properties such as offices, shops, and storefronts."
     },
     {
-      question: "4. Are your solutions suitable for all home types?",
-      answer: "Absolutely! Our security solutions are designed to work with various home types including single-family homes, condos, townhouses, and apartments. We customize our approach based on your specific home structure and security needs."
+      question: "Can window film help lower energy costs?",
+      answer: "Yes. Security films block heat and up to 99% of UV rays, keeping your home cooler and reducing strain on your AC."
     },
     {
-      question: "5. How much do your security solutions cost?",
-      answer: "Pricing varies based on the specific solutions you choose and the size of your property. We offer free consultations and detailed quotes. Our solutions are competitively priced and we offer flexible payment options to fit your budget."
+      question: " Will the film change how my windows look?",
+      answer: "No, it won’t. Our security are designed with a clear adhesive that keeps your glass looking just the way it is. From both inside and outside, the appearance stays virtually the same, and it still lets natural daylight shine through."
     },
     {
-      question: "6. Do you offer emergency services?",
-      answer: "Yes, we provide 24/7 emergency security services for urgent situations. Whether you've experienced a break-in attempt or need immediate security upgrades, our team is available to help secure your home quickly and professionally."
+      question: "Do you provide warranties?",
+      answer: " Yes, our products and installations come with warranties for lasting protection and peace of mind."
     }
   ];
 
@@ -39,8 +39,8 @@ const FAQComponent = () => {
 
   return (
     <>
-    <div id='faq' className="bg-white py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <div id='faq' className="bg-white py-16  ">
+      <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className=" mb-16">
           <p className="text-sm font-semibold text-[#cfb16b] tracking-widest uppercase mb-4">
@@ -58,7 +58,7 @@ const FAQComponent = () => {
             <div className=" w-full">
               
                <Image
-                    src={`/images/faq-img.jpg`}
+                    src={`/images/faq-img.webp`}
                     alt="aboutimg"
                     width={500}
                     height={600}
@@ -74,7 +74,7 @@ const FAQComponent = () => {
                 <div key={index} className="bg-white border-b border-black ">
                   <button
                     onClick={() => toggleAccordion(index)}
-                    className="w-full flex justify-between items-center py-6 text-left "
+                    className="w-full flex justify-between items-start py-6 text-left "
                     aria-expanded={activeIndex === index}
                     aria-controls={`faq-answer-${index}`}
                   >

@@ -1,9 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import Service_Img1 from "../../public/images/service-l-img1.jpg";
-import Service_Img2 from "../../public/images/service-l-img2.jpg";
-import Service_Img3 from "../../public/images/service-l-img3.jpg";
-import Service_Img4 from "../../public/images/service-l-img4.jpg"
 
 const ServicesComponent = () => {
   const services = [
@@ -26,8 +22,8 @@ const ServicesComponent = () => {
   ];
 
   return (
-    <section id='services' className="py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <section id='services' className="py-20  ">
+      <div className="max-w-7xl mx-auto px-4">
        
         <div className="text-center mb-16">
           <p className="text-sm  text-[#cfb16b] font-semibold tracking-widest uppercase mb-4">
@@ -46,35 +42,19 @@ const ServicesComponent = () => {
             <div className="flex flex-row flex-wrap gap-6">
              
               <div className="sm:w-[45%] w-full ">
-                <Image
-                  src={Service_Img1}
-                  alt="Service_Img1"
-                  className="w-full h-[360px] border-4 border-[#cfb16b] object-cover"
-                />
+                 <Image src={`/images/service-img1.webp`} alt="Fort Knox Solutions" width={205} height={300}  className="w-full h-[360px] border-4 border-[#cfb16b] object-cover"  />
               </div>
              
               <div className="sm:w-[45%] w-full sm:pt-10">
-                 <Image
-                  src={Service_Img2}
-                  alt="Service_Img2"
-                  className="w-full h-[360px] border-4 border-[#cfb16b] object-cover  "
-                />
+                <Image src={`/images/service-img2.webp`} alt="Fort Knox Solutions" width={205} height={300}  className="w-full h-[360px] border-4 border-[#cfb16b] object-cover"  />
               </div>
               
               <div className="sm:w-[45%] w-full">
-                <Image
-                  src={Service_Img3}
-                  alt="Service_Img3"
-                  className="w-full  object-cover border-4 border-[#cfb16b] h-[360px]  sm:mt-[-30]"
-                />
+                <Image src={`/images/service-img3.webp`} alt="Fort Knox Solutions" width={205} height={300}  className="w-full h-[360px] border-4 border-[#cfb16b] object-cover mt-[-30]"  />
               </div>
              
               <div className="sm:w-[45%] w-full ">
-                <Image
-                  src={Service_Img4}
-                  alt="Service_Img4"
-                  className="w-full h-[360px] border-4 border-[#cfb16b] object-cover "
-                />
+                <Image src={`/images/service-img4.webp`} alt="Fort Knox Solutions" width={205} height={300}  className="w-full h-[360px] border-4 border-[#cfb16b] object-cover md:mb-0 mb-8"  />
               </div>
             </div>
           </div>

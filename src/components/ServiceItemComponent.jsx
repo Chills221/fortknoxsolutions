@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import OurserviceImg1 from "../../public/images/our-service-img1.jpg";
 import Button from './Elements/Button';
 
 const ServiceItemComponent = ({
@@ -28,12 +27,7 @@ const ServiceItemComponent = ({
                         >
                             {title}
                         </h2>
-                         <h4
-                            id="service-subtitle"
-                            className="text-xl sm:text-2xl lg:text-3xl  text-gray-900 leading-tight"
-                        >
-                            {subtitle}
-                        </h4>
+                       
 
                         <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
                             {description}

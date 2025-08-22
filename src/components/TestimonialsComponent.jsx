@@ -48,14 +48,14 @@ const TestimonialsComponent = () => {
   };
 
   return (
-    <section id='testimonials' className="bg-black text-white lg:py-26 py-20  px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <section id='testimonials' className="bg-black text-white py-26">
+      <div className="max-w-7xl mx-auto  px-4">
         {/* Content Grid */}
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center ">
           {/* Left Side - Image (30% width on desktop) */}
           <div className="w-full lg:w-[40%] flex justify-center lg:justify-start ">
             <Image
-              src={`/images/testimonial-img.jpg`}
+              src={`/images/testimonial-img.webp`}
               alt="testimonials"
               width={500}
               height={600}
@@ -67,7 +67,7 @@ const TestimonialsComponent = () => {
           <div className="w-full lg:w-[58%] flex flex-col justify-center">
             {/* Header */}
             <div className="lg:mb-8 mb-4">
-              <p className="text-sm font-semibold text-[#cfb16b] tracking-widest uppercase">
+              <p className="text-sm font-semibold text-[#cfb16b] tracking-widest uppercase mb-4">
                 TESTIMONIALS
               </p>
               <h2 className="text-4xl sm:text-5xl text-bold leading-tight w-full">
@@ -118,7 +118,7 @@ const TestimonialsComponent = () => {
                     </div>
                   ))}
                 </div>
-                <div className="lg:flex space-x-4 absolute left-0 mt-8  hidden">
+                <div className="flex space-x-4 absolute lg:left-0 left-6 mt-8 ">
                   <button
                     onClick={prevSlide}
                     className="w-10 h-10 border border-white cursor-pointer rounded-full flex items-center justify-center hover:border-[#cfb16b] hover:text-[#cfb16b] transition-colors duration-200 focus:outline-none focus:ring focus:ring-none focus:ring-none focus:ring-offset-black"
@@ -143,7 +143,7 @@ const TestimonialsComponent = () => {
           </div>
 
           {/* Navigation Controls */}
-          <div className="flex items-center justify-between lg:mt-12 mt-4 lg:w-[2%] w-full ">
+          <div className="lg:flex items-center justify-between lg:mt-12 mt-4 lg:w-[2%] w-full hidden ">
             {/* Dots Indicator */}
             <div className="flex lg:flex-col flex-row gap-4">
               {testimonials.map((_, index) => (

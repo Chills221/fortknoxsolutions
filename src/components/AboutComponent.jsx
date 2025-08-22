@@ -13,8 +13,8 @@ import Image from 'next/image';
  */
 const AboutComponent = () => {
   return (
-    <section id='about' className="bg-black text-white py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <section id='about' className="bg-black text-white py-16 ">
+      <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="text-center lg:mb-16 mb-8">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#cfb16b] mb-4">
@@ -28,9 +28,9 @@ const AboutComponent = () => {
           <div className="flex-1 lg:space-y-4 space-y-8 lg:order-1 lg:w-[60%] w-full">
             {/* Who We Are */}
             <div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-[#cfb16b] lg:mb-3 mb-5">
+              <h3 className="text-2xl sm:text-3xl font-bold text-[#cfb16b] lg:mb-3 mb-5">
                 Who We Are
-              </h2>
+              </h3>
               <p className="text-gray-300 text-base lg:text-lg leading-relaxed">
                 At Fort Knox Solutions, we believe every family deserves to feel safe in their own home. 
                 Based in Toronto, we specialize in window security film, door reinforcements, and advanced 
@@ -41,13 +41,27 @@ const AboutComponent = () => {
 
             {/* Our Mission */}
             <div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-[#cfb16b] lg:mb-3 mb-5">
+              <h3 className="text-2xl sm:text-3xl font-bold text-[#cfb16b] lg:mb-3 mb-5">
                 Our Mission
-              </h2>
+              </h3>
               <p className="text-gray-300 text-base lg:text-lg leading-relaxed">
-                To provide homeowners with affordable, effective, and reliable security solutions that 
-                protect what matters most — your family, your property.
+                To provide homeowners with affordable, effective, and reliable security solutions that protect what matters most — your family, and especially your peace of mind.
+
               </p>
+               <p className="text-gray-300 text-base lg:text-lg leading-relaxed mt-4">
+              We know that a standard lock or basic alarm system isn’t enough anymore. Burglars often target vulnerable entry points like windows and doors – that’s where we come in.
+
+
+              </p>
+               <p className="text-gray-300 text-base lg:text-lg leading-relaxed mt-4">
+              Our team combines expertise, high-quality products, and honest service to give you security that lasts. Whether it’s reinforcing your doors, applying shatter-resistant window film, or installing security cameras, we treat your home as if it were our own.
+
+              </p>
+
+
+
+
+
             </div>
              <div className="grid grid-cols-1 sm:grid-cols-2  gap-8 mb-6">
           {/* Trusted Protection */}
@@ -58,7 +72,7 @@ const AboutComponent = () => {
               </svg>
             </div>
             <div>
-              <h3 className="text-xl font-bold text-white mb-2">Trusted Protection</h3>
+              <h4 className="text-xl font-bold text-white mb-2">Trusted Protection</h4>
               <p className="text-gray-400 text-sm leading-relaxed">
                 We use premium-grade security solutions to keep your family safe.
               </p>
@@ -73,7 +87,7 @@ const AboutComponent = () => {
               </svg>
             </div>
             <div>
-              <h3 className="text-xl font-bold text-white mb-2">Tailored Solutions</h3>
+              <h4 className="text-xl font-bold text-white mb-2">Tailored Solutions</h4>
               <p className="text-gray-400 text-sm leading-relaxed">
                 Every home is unique, and so are our customized security approaches.
               </p>
@@ -88,7 +102,7 @@ const AboutComponent = () => {
               </svg>
             </div>
             <div>
-              <h3 className="text-xl font-bold text-white mb-2">Proven Expertise</h3>
+              <h4 className="text-xl font-bold text-white mb-2">Proven Expertise</h4>
               <p className="text-gray-400 text-sm leading-relaxed">
                 With years of experience in home security, we deliver reliable results.
               </p>
@@ -103,7 +117,7 @@ const AboutComponent = () => {
               </svg>
             </div>
             <div>
-              <h3 className="text-xl font-bold text-white mb-2">Customer First</h3>
+              <h4 className="text-xl font-bold text-white mb-2">Customer First</h4>
               <p className="text-gray-400 text-sm leading-relaxed">
                 Your safety and satisfaction are our top priorities.
               </p>
@@ -116,7 +130,7 @@ const AboutComponent = () => {
           <div className="flex-1 lg:w-[40%] w-full mx-auto lg:mx-0 lg:order-2">
             
               <Image
-                src={`/images/about-image.jpg`}
+                src={`/images/about-image.webp`}
                 alt="aboutimg"
                 width={500}
                 height={600}

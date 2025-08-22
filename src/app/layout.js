@@ -6,6 +6,15 @@ const montserrat = Montserrat({
   weight: ["300", "400", "600", "700"], // choose weights you need
   variable: "--font-montserrat",
 });
+export const metadata = {
+  title: 'Home & Business Security Solutions Toronto | Window Film & Door Reinforcements',
+  description: 'Secure your home or business in Toronto with premium window security film, reinforced doors, and security cameras. Free security consultation included.',
+  // icons: {
+  //   icon: '/favicon.ico', // default favicon
+  //   shortcut: '/favicon.ico',
+  //   apple: '/apple-touch-icon.png', // for iOS devices
+  // },
+}
 
 
 export default function RootLayout({ children }) {
