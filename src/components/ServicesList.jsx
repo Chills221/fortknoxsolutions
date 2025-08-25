@@ -18,13 +18,13 @@ const ServicesList = () => {
             align="left" 
             title='Free Security Consultation'            
             description='Every home is unique. That why we offer a complimentary walkthrough and consultation, giving you a custom plan to strengthen your home security.'
-            imageUrl='/images/our-service-img4.webp'
+            imageUrl='/images/our-service-img1.webp'
             />
             <ServiceItemComponent 
             align="right"
             title='Security Window Film'
             description='Our premium window security film adds an invisible layer of strength to your glass, making it much harder to break or shatter. In the event of an attempted break-in, storm, or accident, the film helps hold glass together — keeping your home or business secure and your loved ones safe.'
-            imageUrl='/images/our-service-img1.webp'
+            imageUrl='/images/our-service-img2.webp'
              />
             <ServiceItemComponent 
             align="left"
