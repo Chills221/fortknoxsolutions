@@ -32,7 +32,7 @@ const ServicesList = () => {
            
             description='Turn your entry points into strongholds.
 Most break-ins happen through vulnerable doors and windows. Our reinforcement solutions strengthens the windows and doors itself, giving intruders no easy way in.'
-            imageUrl='/images/our-service-img2.webp'
+            imageUrl='/images/door-reinforcement.jpg'
              />
             <ServiceItemComponent 
             align="right" 
