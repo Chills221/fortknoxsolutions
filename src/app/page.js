@@ -10,6 +10,7 @@ import ServicesList from '@/components/ServicesList';
 import ContactFormComponent from '@/components/ContactFormComponent';
 import ProtectComponent from '@/components/ProtectComponent';
 import CommertialSecurityComponent from '@/components/CommertialSecurityComponent';
+import ProcessSteps from '@/components/ProcessSteps';
 
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
         {/* <ServicesComponent />  */}
         <AboutComponent />
         <ProtectComponent/>
+        <ProcessSteps/>
         <FAQComponent />
         {/* <TestimonialsComponent />  */}
         <CommertialSecurityComponent/>

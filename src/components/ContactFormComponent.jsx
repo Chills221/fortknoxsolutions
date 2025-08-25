@@ -269,12 +269,13 @@ const ContactFormComponent = () => {
                 <div className="flex-1 min-w-0 ">
                   <h3 className="text-lg font-semibold text-black mb-2">Call Us</h3>
                   <div className="flex sm:flex-row flex-col sm:gap-4 sm:items-center">
-                    <Link href="tel:+5623 - 080 - 59632" className="text-black break-all text-sm flex items-center mb-0">
-                      <span className="text-black break-all text-sm">Mobile:</span> +5623 - 080 - 59632
+                    <Link href="tel:416-770-5156s" className="text-black break-all text-sm flex items-center mb-0">
+                      <span className="text-black break-all text-sm">Mobile:</span> 416-770-5156
+
                     </Link>
-                    <Link href="tel:+1234 - 853 - 365" className="text-black break-all text-sm">
+                    {/* <Link href="tel:+1234 - 853 - 365" className="text-black break-all text-sm">
                       <span className="text-black break-all text-sm">Hotline:</span> +1234 - 853 - 365
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>
@@ -289,8 +290,7 @@ const ContactFormComponent = () => {
                 <div className="flex-1 min-w-0">
                   <h3 className="text-lg font-semibold text-black mb-2">Email</h3>
                   <div className="space-y-1 flex sm:flex-row flex-col sm:gap-4">
-                    <Link href="#" className="text-black break-all text-sm">info@exampleyourmail.com</Link>
-                    <Link href="#" className="text-black break-all text-sm">info@example.com</Link>
+                    <Link href="mailto:info@fortknoxsolutions.ca" className="text-black break-all text-sm">info@fortknoxsolutions.ca</Link>
                   </div>
                 </div>
               </div>
@@ -306,7 +306,7 @@ const ContactFormComponent = () => {
                 <div className="flex-1 min-w-0">
                   <h3 className="text-lg font-semibold text-black mb-2">Location</h3>
                   <p className="text-black break-all text-sm">
-                    Dhaka 102, utl 1216, road 45 sterl linehouse street
+                    7250 Keele St, Vaughan, ON L4K 1Z8,
                   </p>
                 </div>
               </div>

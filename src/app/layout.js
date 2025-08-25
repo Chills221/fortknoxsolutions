@@ -7,8 +7,8 @@ const montserrat = Montserrat({
   variable: "--font-montserrat",
 });
 export const metadata = {
-  title: 'Home & Business Security Solutions Toronto | Window Film & Door Reinforcements',
-  description: 'Secure your home or business in Toronto with premium window security film, reinforced doors, and security cameras. Free security consultation included.',
+  title: 'Fort Knox Solutions | Security Film & Door Reinforcements for Homes in Toronto',
+  description: 'Protect your home and family with Fort Knox Solutions. We specialize in security window film, door reinforcements, and home security upgrades across Toronto & the GTA. Free consultations available.',
   // icons: {
   //   icon: '/favicon.ico', // default favicon
   //   shortcut: '/favicon.ico',

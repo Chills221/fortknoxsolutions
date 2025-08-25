@@ -130,7 +130,7 @@ const AboutComponent = () => {
           <div className="flex-1 lg:w-[40%] w-full mx-auto lg:mx-0 lg:order-2">
             
               <Image
-                src={`/images/about-image.webp`}
+                src={`/images/aboutus-img.webp`}
                 alt="aboutimg"
                 width={500}
                 height={600}

@@ -8,7 +8,7 @@ const Footer = () => {
     { 
       name: 'Facebook', 
       icon: Facebook, 
-      href: '#',
+      href: 'https://www.facebook.com/profile.php?id=61579920772379',
       ariaLabel: 'Visit our Facebook page'
     },
     { 
@@ -20,7 +20,7 @@ const Footer = () => {
     { 
       name: 'Instagram', 
       icon: Instagram, 
-      href: '#',
+      href: 'https://www.instagram.com/fortknoxsolutions/',
       ariaLabel: 'Follow us on Instagram'
     },
   ];

@@ -49,7 +49,7 @@ const Header = () => {
 
           <div className="md:hidden block">
             <input type="checkbox" className="openSideMenu" id="openSideMenu" />
-            <label htmlFor="openSideMenu" className="sideIconToggle" onclick="openNav()">
+            <label htmlFor="openSideMenu" className="sideIconToggle">
               <div className="spinner diagonal part-1"></div>
               <div className="spinner horizontal"></div>
               <div className="spinner diagonal part-2"></div>

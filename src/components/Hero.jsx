@@ -6,7 +6,7 @@ const Hero = () => {
     <>
     <div className="w-full relative">
         <Image
-                      src={`/images/hero-bg.webp`}
+                      src={`/images/hero-image.webp`}
                       alt="aboutimg"
                       width={1920}
                       height={780}

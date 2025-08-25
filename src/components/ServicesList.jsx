@@ -40,7 +40,7 @@ Most break-ins happen through vulnerable doors and windows. Our reinforcement so
             
             description=' Every home is unique. That’s why we offer a complimentary walkthrough and consultation, giving you a custom plan to strengthen your home security.
             Commercial Services'
-            imageUrl='/images/our-service-img1.webp'
+            imageUrl='/images/our-service-img4.webp'
             />
         </section>
     );

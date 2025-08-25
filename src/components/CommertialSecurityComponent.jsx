@@ -55,16 +55,7 @@ const CommertialSecurityComponent =()=>{
                             </div>
 
                         </div>
-                    </div>
-                      <div className="flex flex-col gap-8 md:w-[50%] w-full ">
-                         <Image
-                                                  src={`/images/protect-img.webp`}
-                                                  alt="testimonials"
-                                                  width={500}
-                                                  height={300}
-                                                  className="w-full  h-[500px] object-cover lg:mt-[-150] md:mt-[-120]  "
-                                                />
-                                                 <h4 className="text-4xl text-black uppercase max-w-lg leading-[100%]">ideal for:</h4>
+                          <h4 className="text-4xl text-black uppercase max-w-lg leading-[100%]">ideal for:</h4>
                         <div className="flex flex-row gap-4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#ccb16a" viewBox="0 0 24 24"><path d="M16 6v-2c0-2.209-1.791-4-4-4s-4 1.791-4 4v2h-5v18h18v-18h-5zm-7-2c0-1.654 1.346-3 3-3s3 1.346 3 3v2h-6v-2zm10 8h-14v-4h3v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h6v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h3v4z"/></svg>
                             <div className="">
@@ -96,6 +87,16 @@ const CommertialSecurityComponent =()=>{
                             <p className="text-black text-xl">Protect large glass surfaces for damaze and instrution</p>
                             </div>
                         </div> 
+                    </div>
+                      <div className="flex flex-col gap-8 md:w-[50%] w-full ">
+                         <Image
+                                                  src={`/images/commercial-image.webp`}
+                                                  alt="testimonials"
+                                                  width={500}
+                                                  height={500}
+                                                  className="w-full object-cover lg:mt-[-150] md:mt-[-120] rounded-2xl shadow-lg "
+                                                />
+                                               
                         <div>
                         <h4 className="md:text-4xl text-3xl text-black uppercase md:max-w-lg w-full leading-[100%]">why choose </h4>
                         <span className="md:text-4xl text-3xl text-black uppercase md:max-w-lg w-full leading-[100%]"> fort knox solutions?</span> 

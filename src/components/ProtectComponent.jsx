@@ -23,11 +23,11 @@ const ProtectComponent =()=>{
                     </div>
                     <div className="md:w-[45%] w-full">
                     <Image
-                          src={`/images/protect-img.webp`}
+                          src={`/images/protect-matters.webp`}
                           alt="testimonials"
                           width={500}
                           height={300}
-                          className="w-full  h-[500px] object-cover  "
+                          className="w-full object-cover  rounded-2xl shadow-lg "
                         />
                     </div>
                 </div>
