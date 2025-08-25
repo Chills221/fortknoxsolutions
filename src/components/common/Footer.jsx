@@ -12,12 +12,6 @@ const Footer = () => {
       ariaLabel: 'Visit our Facebook page'
     },
     { 
-      name: 'LinkedIn', 
-      icon: Linkedin, 
-      href: '#',
-      ariaLabel: 'Connect with us on LinkedIn'
-    },
-    { 
       name: 'Instagram', 
       icon: Instagram, 
       href: 'https://www.instagram.com/fortknoxsolutions/',
