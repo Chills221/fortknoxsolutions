@@ -13,7 +13,7 @@ const FAQComponent = () => {
     },
     {
       question: "How long does installation take?",
-      answer: ":Installation time varies depending on the scope of work. Typically, window security film takes 2-4 hours, door reinforcements take 1-2 hours per door, and lock system upgrades take 30-60 minutes per lock. We provide accurate time estimates during our initial consultation."
+      answer: "Installation time varies depending on the scope of work. Typically, window security film takes 2-5 hours, door reinforcements take 1-2 hours, and security cameras take 30-60 minutes per camera."
     },
     {
       question: "Do you only work with residential homes?",
