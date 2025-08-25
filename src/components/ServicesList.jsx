@@ -15,6 +15,12 @@ const ServicesList = () => {
                 </div>
             </div>
             <ServiceItemComponent 
+            align="left" 
+            title='Free Security Consultation'            
+            description='Every home is unique. That&#39s why we offer a complimentary walkthrough and consultation, giving you a custom plan to strengthen your hom security.'
+            imageUrl='/images/our-service-img4.webp'
+            />
+            <ServiceItemComponent 
             align="right"
             title='Security Window Film'
             description='Our premium window security film adds an invisible layer of strength to your glass, making it much harder to break or shatter. In the event of an attempted break-in, storm, or accident, the film helps hold glass together — keeping your home or business secure and your loved ones safe.'
@@ -31,17 +37,10 @@ Most break-ins happen through vulnerable doors and windows. Our reinforcement so
             <ServiceItemComponent 
             align="right" 
             title='Security Cameras'
-            description='Stay connected anddefense Our camera systems provide real-time monitoring, recording, and mobile access – so you can check on your home anytime, anywhere.'
+            description='Stay connected and be aware. Our camera systems provide real-time monitoring, recording, and mobile access - so you can check on your home anytime, anywhere.'
             imageUrl='/images/our-service-img3.webp'
             />
-            <ServiceItemComponent 
-            align="left" 
-            title='Free Security Consultation'
             
-            description=' Every home is unique. That’s why we offer a complimentary walkthrough and consultation, giving you a custom plan to strengthen your home security.
-            Commercial Services'
-            imageUrl='/images/our-service-img4.webp'
-            />
         </section>
     );
 };

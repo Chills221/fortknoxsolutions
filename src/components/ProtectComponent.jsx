@@ -16,9 +16,10 @@ const ProtectComponent =()=>{
                 <div className=" flex md:flex-row flex-col gap-20 items-center">
                     <div className="md:w-[55%] w-full flex flex-col gap-4">
                         <h2 className="lg:text-7xl md:text-5xl text-3xl text-[#fcf8ef] leading-[1.2]">Protect What Matters Most.</h2>
-                        <p className="lg:text-3xl md:text-2xl text-xl text-white">Fort Konx Solutions Provides premium security Film, reinforcements,and advanced locks to keep your home and bussiness safe.</p>
+                        <p className="lg:text-3xl md:text-2xl text-xl text-white">Fort Konx Solutions Provides premium security Film, reinforcements,and security cameras to keep your home safe.
+</p>
                         <div className="inline-flex mt-6">
-                        <Button text="Get a Free Quite" />
+                        <Button text="Get a Free Quote" />
                         </div>
                     </div>
                     <div className="md:w-[45%] w-full">
