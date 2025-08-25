@@ -17,7 +17,7 @@ const ServicesList = () => {
             <ServiceItemComponent 
             align="left" 
             title='Free Security Consultation'            
-            description='Every home is unique. That&#39s why we offer a complimentary walkthrough and consultation, giving you a custom plan to strengthen your hom security.'
+            description='Every home is unique. That why we offer a complimentary walkthrough and consultation, giving you a custom plan to strengthen your home security.'
             imageUrl='/images/our-service-img4.webp'
             />
             <ServiceItemComponent 
