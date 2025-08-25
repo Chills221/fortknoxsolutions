@@ -38,7 +38,7 @@ Most break-ins happen through vulnerable doors and windows. Our reinforcement so
             align="right" 
             title='Security Cameras'
             description='Stay connected and be aware. Our camera systems provide real-time monitoring, recording, and mobile access - so you can check on your home anytime, anywhere.'
-            imageUrl='/images/our-service-img3.png'
+            imageUrl='/images/our-service-img3.jpg'
             />
             
         </section>
