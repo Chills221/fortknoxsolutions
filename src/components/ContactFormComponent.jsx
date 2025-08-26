@@ -96,10 +96,10 @@ const ContactFormComponent = () => {
       // ✅ add services manually
       formDataToSend.set("services", formData.services.join(", "));
 
-      await fetch("/", {
+      await fetch("/form.html", {
         method: "POST",
-        body: new URLSearchParams(formDataToSend).toString(),
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(data).toString(),
       });
 
       setSuccess(true);
@@ -131,15 +131,8 @@ const ContactFormComponent = () => {
 
           {/* Left Side - Form */}
           <div className="flex-1 ">
-            <form
-              name="contact-form"
-              method="POST"
-              data-netlify="true"
-              onSubmit={handleSubmit}
-              className="space-y-6"
-            >
-              {/* Required hidden inputs */}
-              <input type="hidden" name="form-name" value="contact-form" />
+           <form name="contact" onSubmit={handleSubmit}>
+            <input type="hidden" name="form-name" value="contact-form" />
               {success && (
                 <div className="p-4 bg-green-100 text-green-700 rounded-lg">
                   ✅ Thank you! Your message has been sent.
