@@ -77,7 +77,7 @@ const ContactFormComponent = () => {
 
     return newErrors;
   };
-const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const newErrors = validateForm();
 
@@ -141,10 +141,10 @@ const handleSubmit = async (e) => {
               {/* Required hidden inputs */}
               <input type="hidden" name="form-name" value="contact-form" />
               {success && (
-        <div className="p-4 bg-green-100 text-green-700 rounded-lg">
-          ✅ Thank you! Your message has been sent.
-        </div>
-      )}
+                <div className="p-4 bg-green-100 text-green-700 rounded-lg">
+                  ✅ Thank you! Your message has been sent.
+                </div>
+              )}
               <div className="mx-auto lg:mx-0">
                 <div className="space-y-4">
                   {/* Email Field */}
@@ -165,7 +165,7 @@ const handleSubmit = async (e) => {
                             }`}
                           aria-describedby={errors.name ? "email-error" : undefined}
                         />
-                        
+
                       </div>
                       {errors.name && (
                         <span id="email-error" className="text-red-500 text-sm mt-1" role="alert">
@@ -191,7 +191,7 @@ const handleSubmit = async (e) => {
                             }`}
                           aria-describedby={errors.email ? "phone-error" : undefined}
                         />
-                        
+
                       </div>
                       {errors.email && (
                         <span id="phone-error" className="text-red-500 text-sm mt-1" role="alert">
@@ -217,7 +217,7 @@ const handleSubmit = async (e) => {
                           placeholder="Your number"
                           className="w-full px-4 py-4 pr-12 text-gray-700 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-[#cfb16b] focus:border-transparent transition-all duration-200"
                         />
-                        
+
                       </div>
                     </div>
                     <div className="flex flex-col">
@@ -299,7 +299,7 @@ const handleSubmit = async (e) => {
                     onMouseEnter={(e) => e.target.style.backgroundColor = '#000'}
                     onMouseLeave={(e) => e.target.style.backgroundColor = '#cfb16b'}
                   >
-                    {isSubmitting  ? (
+                    {isSubmitting ? (
                       <div className="flex items-center justify-center">
                         <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                           <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
