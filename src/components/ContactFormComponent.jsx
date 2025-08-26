@@ -15,7 +15,6 @@ const ContactFormComponent = () => {
     name: "",
     email: "",
     phone: "",
-    address: "",
     message: "",
     services: [], // ✅ Added for multi-select
   });
@@ -57,7 +56,7 @@ const ContactFormComponent = () => {
   const validateForm = () => {
     const newErrors = {};
 
-    const { name, email, phone, address, message, services } = formData;
+    const { name, email, phone,  message, services } = formData;
 
     if (!name.trim()) newErrors.name = "Name is required.";
     else if (name.trim().length < 3) newErrors.name = "Name must be at least 3 characters.";
@@ -68,9 +67,8 @@ const ContactFormComponent = () => {
     if (!phone.trim()) newErrors.phone = "Phone number is required.";
     else if (!/^\d{10}$/.test(phone)) newErrors.phone = "Phone must be 10 digits.";
 
-    if (!address.trim()) newErrors.address = "Address is required.";
 
-    if (!services || services.length === 0) newErrors.services = "Select at least one service.";
+    //if (!services || services.length === 0) newErrors.services = "Select at least one service.";
 
     if (!message.trim()) newErrors.message = "Message is required.";
     else if (message.trim().length < 10) newErrors.message = "Message must be at least 10 characters.";
@@ -78,45 +76,47 @@ const ContactFormComponent = () => {
     return newErrors;
   };
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    const newErrors = validateForm();
+   
+  e.preventDefault();
+  const newErrors = validateForm();
 
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
-      return;
-    }
+  if (Object.keys(newErrors).length > 0) {
+    setErrors(newErrors);
+    console.log('Errors:', newErrors);
+    return;
+  }
 
-    setErrors({});
-    setIsSubmitting(true);
+  setErrors({});
+  setIsSubmitting(true);
+  try {
+    const form = e.target;
+    const formDataToSend = new FormData(form);
 
-    try {
-      const form = e.target;
-      const formDataToSend = new FormData(form);
+    // add services manually
+    formDataToSend.set("services", formData.services.join(", "));
 
-      // ✅ add services manually
-      formDataToSend.set("services", formData.services.join(", "));
+    await fetch("/form.html", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formDataToSend).toString(),
+    });
 
-      await fetch("/form.html", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(data).toString(),
-      });
+    setSuccess(true);
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      address: "",
+      services: [],
+      message: "",
+    });
+  } catch (error) {
+    console.error("Form submission error", error);
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
-      setSuccess(true);
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        address: "",
-        services: [],
-        message: "",
-      });
-    } catch (error) {
-      console.error("Form submission error", error);
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   return (
     <div id='contact' className="min-h-screen flex items-center justify-center md:py-16 py-10" style={{ backgroundColor: '#fff' }}>
@@ -134,7 +134,7 @@ const ContactFormComponent = () => {
            <form name="contact" onSubmit={handleSubmit}>
             <input type="hidden" name="form-name" value="contact-form" />
               {success && (
-                <div className="p-4 bg-green-100 text-green-700 rounded-lg">
+                <div className="p-4 bg-green-100 text-green-700 rounded-lg mb-4">
                   ✅ Thank you! Your message has been sent.
                 </div>
               )}
@@ -208,10 +208,16 @@ const ContactFormComponent = () => {
                           value={formData.phone}
                           onChange={handleInputChange}
                           placeholder="Your number"
-                          className="w-full px-4 py-4 pr-12 text-gray-700 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-[#cfb16b] focus:border-transparent transition-all duration-200"
+                          className={`w-full px-4 py-4 pr-12 text-gray-700 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-[#cfb16b] focus:border-transparent transition-all duration-200 ${errors.phone ? 'border-red-500' : 'border-gray-200'
+                            }`}
                         />
 
                       </div>
+                       {errors.phone && (
+                        <span id="email-error" className="text-red-500 text-sm mt-1" role="alert">
+                          {errors.phone}
+                        </span>
+                      )}
                     </div>
                     <div className="flex flex-col">
                       <label className="text-lg font-semibold text-black mb-2">
