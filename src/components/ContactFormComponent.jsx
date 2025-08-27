@@ -56,7 +56,7 @@ const ContactFormComponent = () => {
   const validateForm = () => {
     const newErrors = {};
 
-    const { name, email, phone,  message, services } = formData;
+    const { name, email, phone, message, services } = formData;
 
     if (!name.trim()) newErrors.name = "Name is required.";
     else if (name.trim().length < 3) newErrors.name = "Name must be at least 3 characters.";
@@ -76,51 +76,51 @@ const ContactFormComponent = () => {
     return newErrors;
   };
   const handleSubmit = async (e) => {
-   
-  e.preventDefault();
-  const newErrors = validateForm();
 
-  if (Object.keys(newErrors).length > 0) {
-    setErrors(newErrors);
-    console.log('Errors:', newErrors);
-    return;
-  }
+    e.preventDefault();
+    const newErrors = validateForm();
 
-  setErrors({});
-  setIsSubmitting(true);
-  try {
-    const form = e.target;
-    const formDataToSend = new FormData(form);
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      console.log('Errors:', newErrors);
+      return;
+    }
 
-    // add services manually
-    formDataToSend.set("services", formData.services.join(", "));
+    setErrors({});
+    setIsSubmitting(true);
+    try {
+      const form = e.target;
+      const formDataToSend = new FormData(form);
 
-    await fetch("/form.html", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formDataToSend).toString(),
-    });
+      // add services manually
+      formDataToSend.set("services", formData.services.join(", "));
 
-    setSuccess(true);
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      address: "",
-      services: [],
-      message: "",
-    });
-  } catch (error) {
-    console.error("Form submission error", error);
-  } finally {
-    setIsSubmitting(false);
-  }
-};
+      await fetch("/form.html", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formDataToSend).toString(),
+      });
+
+      setSuccess(true);
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        address: "",
+        services: [],
+        message: "",
+      });
+    } catch (error) {
+      console.error("Form submission error", error);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
 
   return (
-    <div id='contact' className="min-h-screen flex items-center justify-center md:py-16 py-10" style={{ backgroundColor: '#fff' }}>
-      <div className="w-full max-w-7xl bg-[#F8F8F8] overflow-hidden lg:p-16 sm:p-8 px-4 py-8">
+    <div id='contact' className="min-h-screen flex items-center justify-center md:py-16 py-10 bg-white">
+      <div className="w-full max-w-7xl bg-[#f4f6f8] overflow-hidden lg:p-16 sm:p-8 px-4 py-8">
         <div className='mb-8'>
           <p className='text-base text-[#cfb16b] font-semibold '>Let’s Secure Your Home Today</p>
           <h2 className="text-3xl sm:text-4xl text-black uppercase font-semibold leading-tight py-3 lg:max-w-5xl w-full">
@@ -131,7 +131,15 @@ const ContactFormComponent = () => {
 
           {/* Left Side - Form */}
           <div className="flex-1 ">
-           <form name="contact" onSubmit={handleSubmit}>
+            <iframe
+              title='tintwiz'
+              src="https://app.tintwiz.com/web/ce/8bazaap4i6yzwbiugpguuw2iuprfjosy"
+              width="100%"
+              height="680"
+              frameBorder="0"
+              allowFullScreen
+            />
+            {/* <form name="contact" onSubmit={handleSubmit}>
             <input type="hidden" name="form-name" value="contact-form" />
               {success && (
                 <div className="p-4 bg-green-100 text-green-700 rounded-lg mb-4">
@@ -140,7 +148,6 @@ const ContactFormComponent = () => {
               )}
               <div className="mx-auto lg:mx-0">
                 <div className="space-y-4">
-                  {/* Email Field */}
                   <div className='grid sm:grid-cols-2 gap-4'>
                     <div className="flex flex-col">
                       <label htmlFor="Name" className="text-lg font-semibold text-black mb-2">
@@ -166,8 +173,6 @@ const ContactFormComponent = () => {
                         </span>
                       )}
                     </div>
-
-                    {/* Phone Field */}
                     <div className="flex flex-col">
                       <label htmlFor="email" className="text-lg font-semibold text-black mb-2">
                         Email
@@ -194,7 +199,6 @@ const ContactFormComponent = () => {
                     </div>
                   </div>
 
-                  {/* Address Field */}
                   <div className='grid sm:grid-cols-2 gap-4'>
                     <div className="flex flex-col">
                       <label htmlFor="phone" className="text-lg font-semibold text-black mb-2">
@@ -257,9 +261,6 @@ const ContactFormComponent = () => {
                     </div>
                   </div>
 
-
-
-                  {/* Message Field */}
                   <div className="flex flex-col">
                     <label htmlFor="message" className="text-lg font-semibold text-black mb-2">
                       Message
@@ -289,7 +290,6 @@ const ContactFormComponent = () => {
                     )}
                   </div>
 
-                  {/* Submit Button */}
                   <button
                     type="submit"
                     disabled={isSubmitting}
@@ -312,7 +312,7 @@ const ContactFormComponent = () => {
                   </button>
                 </div>
               </div>
-            </form>
+            </form> */}
           </div>
 
           {/* Right Side - Contact Info */}
