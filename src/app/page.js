@@ -35,7 +35,7 @@ export default function Home() {
         {/* <CommertialSecurityComponent/> */}
        
         {/* <CtaComponent /> */}
-        <ContactFormComponent/>
+        {/* <ContactFormComponent/> */}
       </main>
       <Footer />
     </div>

@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import Link from 'next/link';
 import Image from 'next/image';
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,11 +16,11 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'FAQ', href: '#faq' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about-us' },
+    { name: 'Services', href: '/services' },
+    { name: 'FAQ', href: '/faq' },
+    { name: 'Contact', href: '/contact-us' },
   ];
 
   return (
@@ -58,14 +58,14 @@ const Header = () => {
               <div className="md:hidden bg-card ">
                 <nav className="py-4 space-y-2 pl-4">
                   {navItems.map((item) => (
-                    <a
+                    <Link
                       key={item.name}
                       href={item.href}
                       className="w-auto block py-2 text-[#f6b63f] hover:text-primary hover:bg-muted transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-[#f6b63f] after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                 </nav>
               </div>

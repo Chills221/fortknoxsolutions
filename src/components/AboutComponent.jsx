@@ -16,11 +16,11 @@ const AboutComponent = () => {
     <section id='about' className="bg-black text-white py-16 ">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
-        <div className="text-center lg:mb-16 mb-8">
+        {/* <div className="text-center lg:mb-16 mb-8">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#cfb16b] mb-4">
             About Us
           </h2>
-        </div>
+        </div> */}
 
         {/* Main Content */}
         <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-10 mb-10">

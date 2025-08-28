@@ -42,14 +42,14 @@ const FAQComponent = () => {
     <div id='faq' className="bg-white py-16  ">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
-        <div className=" mb-16">
+        {/* <div className=" mb-16">
           <p className="text-sm font-semibold text-[#cfb16b] tracking-widest uppercase mb-4">
             SUPPORT
           </p>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight md:max-w-4xl w-full">
            Frequently Asked Questions
           </h2>
-        </div>
+        </div> */}
 
         {/* Content Grid */}
         <div className="flex flex-col md:flex-row gap-12 lg:gap-16 items-start">

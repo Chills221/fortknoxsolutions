@@ -7,13 +7,13 @@ const ServicesList = () => {
 
     return (
         <section className="bg-white w-full py-8" id="services">
-            <div className="max-w-7xl mx-auto px-4">
+            {/* <div className="max-w-7xl mx-auto px-4">
                 <div className=" mb-8 ">
                     <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight md:max-w-4xl w-full  ">
                         Our Services
                     </h2>
                 </div>
-            </div>
+            </div> */}
             <ServiceItemComponent 
             align="left" 
             title='Free Security Consultation'            
