@@ -65,7 +65,7 @@ const MainContent = () => {
               style={{ minHeight: '500px' }}
             /> */}
              <Image
-                          src={`/images/middle-image.jpg`}
+                          src={`/images/home-image.jpg`}
                           alt="aboutimg"
                           width={500}
                           height={600}
