@@ -11,6 +11,9 @@ import ContactFormComponent from '@/components/ContactFormComponent';
 import ProtectComponent from '@/components/ProtectComponent';
 import CommertialSecurityComponent from '@/components/CommertialSecurityComponent';
 import ProcessSteps from '@/components/ProcessSteps';
+import WhyChoose from '@/components/WhyChoose';
+import EmbedVideo from '@/components/EmbedVideo';
+import MainContent from '@/components/MainContent';
 
 
 export default function Home() {
@@ -19,14 +22,17 @@ export default function Home() {
       <Header />
       <main>
         <Hero /> 
-        <ServicesList/>       
+        {/* <ServicesList/>        */}
         {/* <ServicesComponent />  */}
-        <AboutComponent />
+        {/* <AboutComponent /> */}
+        <MainContent/>
+        <WhyChoose/>
+        <EmbedVideo/>
         <ProtectComponent/>
         <ProcessSteps/>
-        <FAQComponent />
+        {/* <FAQComponent /> */}
         {/* <TestimonialsComponent />  */}
-        <CommertialSecurityComponent/>
+        {/* <CommertialSecurityComponent/> */}
        
         {/* <CtaComponent /> */}
         <ContactFormComponent/>
