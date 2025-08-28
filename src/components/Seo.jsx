@@ -1,19 +1,11 @@
-import { Metadata } from "next";
 import Head from "next/head";
 
-interface SeoProps {
-  title?: string;
-  description?: string;
-  image?: string;
-  url?: string;
-}
-
-export function seoGenerateMetadata({ title, description, url }: SeoProps): Metadata {
+export function seoGenerateMetadata({ title, description, url }) {
   return {
     alternates: {
       canonical: url,
       languages: {
-        'en-US': '/en-US'
+        "en-US": "/en-US",
       },
     },
     title,
@@ -31,19 +23,19 @@ export function seoGenerateMetadata({ title, description, url }: SeoProps): Meta
       description,
       images: "/og-image.png",
     },
+    metadataBase: new URL("https://fortknoxsolutions.ca"), // 👈 required for build
   };
 }
 
-const Seo = ({ title, description, image, url }: SeoProps) => (
+const Seo = ({ title, description, image, url }) => (
   <Head>
     <title>{title}</title>
     <link rel="alternate" hrefLang="en-US" href="/en-US" />
     <meta name="description" content={description} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    {url && <link rel="canonical" href={url}/>}
-    
-    {image && <meta property="og:image" content={"/og-image.png"} />}
+    {url && <link rel="canonical" href={url} />}
+    {image && <meta property="og:image" content="/og-image.png" />}
     {url && <meta property="og:url" content={url} />}
     <meta name="twitter:card" content="summary_large_image" />
   </Head>

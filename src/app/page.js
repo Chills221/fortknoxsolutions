@@ -1,5 +1,6 @@
 import Header from '@/components/common/Header';
 import Footer from '@/components/common/Footer';
+import { seoGenerateMetadata } from '@/components/Seo';
 import Hero from '@/components/Hero';
 import ProtectComponent from '@/components/ProtectComponent';
 import ProcessSteps from '@/components/ProcessSteps';
@@ -21,20 +22,11 @@ export default function Home() {
       <Header />
       <main>
         <Hero /> 
-        {/* <ServicesList/>        */}
-        {/* <ServicesComponent />  */}
-        {/* <AboutComponent /> */}
         <MainContent/>
         <WhyChoose/>
         <EmbedVideo/>
         <ProtectComponent/>
         <ProcessSteps/>
-        {/* <FAQComponent /> */}
-        {/* <TestimonialsComponent />  */}
-        {/* <CommertialSecurityComponent/> */}
-       
-        {/* <CtaComponent /> */}
-        {/* <ContactFormComponent/> */}
       </main>
       <Footer />
     </div>
