@@ -1,13 +1,13 @@
 import Header from '@/components/common/Header';
 import Footer from '@/components/common/Footer';
 import PageBanner from '@/components/PageBanner';
-import ServicesList from '@/components/ServicesList';
+import CommertialSecurityComponent from '@/components/CommertialSecurityComponent';
 import { seoGenerateMetadata } from "@/components/Seo";
 export async function generateMetadata() {
   return seoGenerateMetadata({
     title: 'Home Security Services | Window Film, Door Reinforcements & Cameras',
     description: 'Discover our complete range of home security solutions. From shatter-resistant window film to reinforced doors and 24/7 security cameras, Fort Knox Solutions makes your home safer.',
-    url: `https://fortknoxsolutions.ca/services`,
+    url: `https://fortknoxsolutions.ca/commercial`,
   });
 }
 
@@ -16,8 +16,8 @@ export default function Services() {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <PageBanner title="Our Services" />       
-        <ServicesList/>
+        {/* <PageBanner title="Commercial Services" />        */}
+        <CommertialSecurityComponent/>
       </main>
       <Footer />
     </div>

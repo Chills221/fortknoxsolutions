@@ -19,6 +19,7 @@ const Header = () => {
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about-us' },
     { name: 'Services', href: '/services' },
+    { name: 'Commercial Security', href: '/commercial' },
     { name: 'FAQ', href: '/faq' },
     { name: 'Contact', href: '/contact-us' },
   ];
@@ -29,7 +30,7 @@ const Header = () => {
         <div className="max-w-7xl mx-auto flex items-center justify-between h-20 px-4">
 
           <div className="flex items-center space-x-32">
-            <Image src={`/images/logo.webp`} alt="Fort Knox Solutions" width={205} height={60} className="h-[60px] w-auto  py-" />
+            <Link href="/"><Image src={`/images/logo.webp`} alt="Fort Knox Solutions" width={205} height={60} className="h-[60px] w-auto  py-" /></Link>
            
           </div>
 
