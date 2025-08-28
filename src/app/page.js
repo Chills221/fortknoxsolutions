@@ -24,9 +24,9 @@ export default function Home() {
         <Hero /> 
         <MainContent/>
         <WhyChoose/>
-        <EmbedVideo/>
-        <ProtectComponent/>
+        {/* <EmbedVideo/> */}
         <ProcessSteps/>
+        <ProtectComponent/>        
       </main>
       <Footer />
     </div>

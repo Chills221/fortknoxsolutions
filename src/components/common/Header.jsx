@@ -19,7 +19,7 @@ const Header = () => {
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about-us' },
     { name: 'Services', href: '/services' },
-    { name: 'Commercial Security', href: '/commercial' },
+    { name: 'Commercial', href: '/commercial' },
     { name: 'FAQ', href: '/faq' },
     { name: 'Contact', href: '/contact-us' },
   ];
@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <>
       <div className=" bg-white py-2 z-20 relative">
-        <div className="max-w-7xl mx-auto flex items-center justify-between h-20 px-4">
+        <div className="max-w-[1360px] mx-auto flex items-center justify-between h-20 px-4">
 
           <div className="flex items-center space-x-32">
             <Link href="/"><Image src={`/images/logo.webp`} alt="Fort Knox Solutions" width={205} height={60} className="h-[60px] w-auto  py-" /></Link>
@@ -40,12 +40,35 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className='text-lg leading-[16px] text-[#cb8b13] font-semibold uppercase relative after:absolute after:-bottom-2 after:left-0 after:right-0 after:h-[2px] after:w-full after:origin-bottom after:scale-x-0 after:bg-[#f6b63f] after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100'
+                className='text-md leading-[16px] text-[#cb8b13] font-medium uppercase relative after:absolute after:-bottom-2 after:left-0 after:right-0 after:h-[2px] after:w-full after:origin-bottom after:scale-x-0 after:bg-[#f6b63f] after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100'
               >
                 {item.name}
               </a>
             ))}
+            
           </nav>
+          <div className="flex flex-row items-center space-x-4">
+            <div className="flex items-center space-x-4 bg-white px-4">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#f6e9cc' }}>
+                <svg className="w-6 h-6 text-[#cfb16b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+              </div>
+              <div className="flex-1 min-w-0 ">
+                {/* <h3 className="text-lg font-semibold text-black mb-2">Call Us</h3> */}
+                <div className="flex sm:flex-row flex-col sm:gap-4 sm:items-center">
+                  <Link href="tel:416-770-5156s" className="text-lg leading-[16px] text-[#000000] font-medium flex items-center mb-0">
+                    416-770-5156
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="flex  items-center rounded-full border-4 border-[#f6e9cc]">
+              <Link href="/contact-us" className="text-lg leading-[16px] text-[#000000] px-3 py-3 text-center font-medium flex items-center mb-0">
+                Get Free Quote
+              </Link>
+            </div>
+          </div>
 
 
           <div className="md:hidden block">
