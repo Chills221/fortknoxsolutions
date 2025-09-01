@@ -140,9 +140,6 @@ const ContactFormComponent = () => {
               frameBorder="0"
               allowFullScreen
             />
-
-
-
           </div>
 
           {/* Right Side - Contact Info */}

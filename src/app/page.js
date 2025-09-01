@@ -7,6 +7,7 @@ import ProcessSteps from '@/components/ProcessSteps';
 import WhyChoose from '@/components/WhyChoose';
 import EmbedVideo from '@/components/EmbedVideo';
 import MainContent from '@/components/MainContent';
+import HomeContactForm from '@/components/HomeContactForm';
 
 export async function generateMetadata() {
   return seoGenerateMetadata({
@@ -26,7 +27,8 @@ export default function Home() {
         <WhyChoose/>
         {/* <EmbedVideo/> */}
         <ProcessSteps/>
-        <ProtectComponent/>        
+        <ProtectComponent/>  
+        <HomeContactForm/>      
       </main>
       <Footer />
     </div>
