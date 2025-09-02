@@ -75,8 +75,8 @@ const CommertialSecurityComponent =()=>{
                             <div className="flex flex-col gap-6 justify-center items-center">
                             <p className="text-black text-xl text-center max-w-sm mx-auto">Don't let weak glass put your bussiness at risk.
 </p>
-                            
-                            <Button text="Request free commercial quote" />
+                            <a href="#contactform" className="relative inline-block text-center overflow-hidden z-10 text-black hover:text-white hover:bg-black text-sm font-medium bg-[#cfb16b] px-10 uppercase py-3 tracking-[2.64px] transition-all duration-300 ease-linear">Request free commercial quote</a>
+                            {/* <Button text="Request free commercial quote" /> */}
                             </div>
 
                         </div>

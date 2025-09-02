@@ -32,7 +32,8 @@ const ServiceItemComponent = ({
                         <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
                             {description}
                         </p>
-                        <Button text="Learn More"/>
+                        <a href="#contactform" className="relative inline-block text-center overflow-hidden z-10 text-black hover:text-white hover:bg-black text-sm font-medium bg-[#cfb16b] px-10 uppercase py-3 tracking-[2.64px] transition-all duration-300 ease-linear">Learn More</a>
+                        <a  text="Learn More"/>
                     </div>
                 </div>
 
