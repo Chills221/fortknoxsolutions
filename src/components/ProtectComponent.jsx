@@ -19,7 +19,7 @@ const ProtectComponent =()=>{
                         <p className="lg:text-3xl md:text-2xl text-xl text-white">Fort Konx Solutions Provides premium security Film, reinforcements,and security cameras to keep your home safe.
 </p>
                         <div className="inline-flex mt-6">
-                        <Button text="Get a Free Quote" />
+                        <a href="#contactform"  className="relative inline-block text-center overflow-hidden z-10 text-black hover:text-white hover:bg-black text-sm font-medium bg-[#cfb16b] px-10 uppercase py-3 tracking-[2.64px] transition-all duration-300 ease-linear">Get a Free Quote</a>
                         </div>
                     </div>
                     <div className="md:w-[45%] w-full">

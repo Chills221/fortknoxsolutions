@@ -64,9 +64,9 @@ const Header = () => {
               </div>
             </div>
             <div className="flex  items-center rounded-full border-4 border-[#f6e9cc]">
-              <Link href="/contact-us" className="text-lg leading-[16px] text-[#000000] px-3 py-3 text-center font-medium flex items-center mb-0">
+              <a href="/#contactform"  className="text-lg leading-[16px] text-[#000000] px-3 py-3 text-center font-medium flex items-center mb-0">
                 Get Free Quote
-              </Link>
+              </a>
             </div>
           </div>
 

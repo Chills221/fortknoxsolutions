@@ -3,6 +3,7 @@ import Footer from '@/components/common/Footer';
 import PageBanner from '@/components/PageBanner';
 import CommertialSecurityComponent from '@/components/CommertialSecurityComponent';
 import { seoGenerateMetadata } from "@/components/Seo";
+import CommercialContactForm from '@/components/CommercialContactForm';
 export async function generateMetadata() {
   return seoGenerateMetadata({
     title: 'Home Security Services | Window Film, Door Reinforcements & Cameras',
@@ -18,6 +19,7 @@ export default function Services() {
       <main>
         {/* <PageBanner title="Commercial Services" />        */}
         <CommertialSecurityComponent/>
+        <CommercialContactForm/>
       </main>
       <Footer />
     </div>

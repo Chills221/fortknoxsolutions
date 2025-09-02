@@ -34,7 +34,7 @@ const Hero = () => {
             
           </h2>
           
-          <Button text="Book Your Free Security Consultation Today!" />
+          <a href="#contactform" className="relative inline-block text-center overflow-hidden z-10 text-black hover:text-white hover:bg-black text-sm font-medium bg-[#cfb16b] px-10 uppercase py-3 tracking-[2.64px] transition-all duration-300 ease-linear">Book Your Free Security Consultation Today!</a>
         </div>
 
         {/* Stats */}
