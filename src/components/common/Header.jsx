@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <>
       <div className=" bg-white py-2 z-20 relative">
-        <div className="max-w-[1360px] mx-auto flex items-center justify-between h-20 px-4">
+        <div className="max-w-[1360px] mx-auto flex md:flex-row flex-col items-center justify-between px-4 md:gap-0 gap-2">
 
           <div className="flex items-center space-x-32">
             <Link href="/"><Image src={`/images/logo.webp`} alt="Fort Knox Solutions" width={205} height={60} className="h-[60px] w-auto  py-" /></Link>
@@ -47,7 +47,7 @@ const Header = () => {
             ))}
             
           </nav>
-          <div className="flex flex-row items-center space-x-4">
+          <div className="flex md:flex-row flex-col items-center space-x-4 md:gap-2 gap-2">
             <div className="flex items-center space-x-4 bg-white px-4">
               <div className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#f6e9cc' }}>
                 <svg className="w-6 h-6 text-[#cfb16b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
