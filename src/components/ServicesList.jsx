@@ -26,7 +26,7 @@ const ServicesList = () => {
             description='Our premium window security film adds an invisible layer of strength to your glass, making it much harder to break or shatter. In the event of an attempted break-in, storm, or accident, the film helps hold glass together — keeping your home or business secure and your loved ones safe.'
             imageUrl='/images/our-service-img2.webp'
              />
-            {/* <ServiceItemComponent 
+            <ServiceItemComponent 
             align="left"
             title='Door Reinforcements'
            
@@ -34,7 +34,7 @@ const ServicesList = () => {
 Most break-ins happen through vulnerable doors and windows. Our reinforcement solutions strengthens the windows and doors itself, giving intruders no easy way in.'
             imageUrl='/images/door-reinforcement.jpg'
              />
-            <ServiceItemComponent 
+            {/* <ServiceItemComponent 
             align="right" 
             title='Security Cameras'
             description='Stay connected and be aware. Our camera systems provide real-time monitoring, recording, and mobile access - so you can check on your home anytime, anywhere.'
