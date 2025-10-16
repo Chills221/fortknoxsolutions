@@ -196,7 +196,7 @@ const ContactFormComponent = () => {
             <div className="flex-1 min-w-0">
               <h3 className="text-lg font-semibold text-black mb-2">Location</h3>
               <p className="text-black break-all text-sm">
-                250 Keele Street Unit 304<br/>Concord L4K 1Z8,
+                7250 Keele Street Unit 304<br/>Concord L4K 1Z8,
               </p>
             </div>
           </div>
