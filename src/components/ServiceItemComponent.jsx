@@ -8,6 +8,8 @@ const ServiceItemComponent = ({
     description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     buttonText = "Learn More",
     imageUrl = "/api/placeholder/600/400",
+    imageWidth = "600",
+    imageHeight = "500",
     imageAlt = "Service image",
     align = "left"
 }) => {
@@ -39,11 +41,12 @@ const ServiceItemComponent = ({
 
                 {/* Right Image - 45% on desktop */}
                 <div className="w-full md:flex-1 md:max-w-[48%] flex-shrink-0">
-                    <div className="relative aspect-[4/3] w-full">
+                    <div className="relative w-full">
                         <Image
                             src={imageUrl}
                             alt={imageAlt}
-                            fill
+                            width={imageWidth}
+                            height={imageHeight}
                             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw"
                             className="object-cover rounded-2xl shadow-lg"
                             priority={false}

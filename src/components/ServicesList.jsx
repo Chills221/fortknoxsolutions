@@ -19,12 +19,16 @@ const ServicesList = () => {
             title='Free Security Consultation'            
             description='Every home is unique. That why we offer a complimentary walkthrough and consultation, giving you a custom plan to strengthen your home security.'
             imageUrl='/images/our-service-img1.webp'
+            imageWidth="600"
+            imageHeight="500"
             />
             <ServiceItemComponent 
             align="right"
             title='Security Window Film'
             description='Our premium window security film adds an invisible layer of strength to your glass, making it much harder to break or shatter. In the event of an attempted break-in, storm, or accident, the film helps hold glass together — keeping your home or business secure and your loved ones safe.'
             imageUrl='/images/our-service-img2.webp'
+            imageWidth="700"
+            imageHeight="700"
              />
             <ServiceItemComponent 
             align="left"
@@ -32,7 +36,9 @@ const ServicesList = () => {
            
             description='Turn your entry points into strongholds.
 Most break-ins happen through vulnerable doors and windows. Our reinforcement solutions strengthens the windows and doors itself, giving intruders no easy way in.'
-            imageUrl='/images/door-reinforcement.jpg'
+            imageUrl='/images/door-reinforcement-new.jpg'
+            imageWidth="700"
+            imageHeight="400"
              />
             {/* <ServiceItemComponent 
             align="right" 
