@@ -37,7 +37,7 @@ const MainContent = () => {
               <div className="flex-shrink-0 w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center">
                 <Camera className="w-5 h-5 text-yellow-600" />
               </div>
-              <span className="text-gray-700 font-medium">24/7 Security Camera Systems</span>
+              <span className="text-gray-700 font-medium">24/7 Comprehensive Security Review</span>
             </div>
           </div>
 
