@@ -13,7 +13,7 @@ const MainContent = () => {
               Your home should feel like the safest place in the world.
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              That's why we specialize in residential security services that make a real difference. From security window film that strengthens glass, to door reinforcements that stop forced entry, to security cameras for 24/7 awareness – we've got you covered.
+              That's why we specialize in residential security services that make a real difference. From security window film that strengthens glass to door reinforcements that stop forced entry — we've got you covered.
             </p>
           </div>
 
