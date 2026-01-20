@@ -3,6 +3,8 @@ import Footer from '@/components/common/Footer';
 import PageBanner from '@/components/PageBanner';
 import FAQComponent from '@/components/FAQComponent';
 import { seoGenerateMetadata } from "@/components/Seo";
+import HomeContactForm from '@/components/HomeContactForm';
+
 export async function generateMetadata() {
   return seoGenerateMetadata({
     title: 'Fort Knox Solutions | Security Film & Door Reinforcements for Homes in Toronto',
@@ -17,6 +19,7 @@ export default function FAQ() {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
+        <HomeContactForm/>  
         <PageBanner title="Frequently Asked Questions" />       
         <FAQComponent/>
       </main>

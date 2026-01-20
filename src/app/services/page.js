@@ -4,6 +4,7 @@ import PageBanner from '@/components/PageBanner';
 import ServicesList from '@/components/ServicesList';
 import { seoGenerateMetadata } from "@/components/Seo";
 import HomeContactForm from '@/components/HomeContactForm';
+
 export async function generateMetadata() {
   return seoGenerateMetadata({
     title: 'Home Security Services | Window Film, Door Reinforcements & Cameras',
@@ -17,9 +18,9 @@ export default function Services() {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
+        <HomeContactForm/>      
         <PageBanner title="Our Services" />       
         <ServicesList/>
-        <HomeContactForm/>
       </main>
       <Footer />
     </div>

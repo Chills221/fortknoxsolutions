@@ -12,7 +12,7 @@ import HomeContactForm from '@/components/HomeContactForm';
 export async function generateMetadata() {
   return seoGenerateMetadata({
     title: 'Fort Knox Solutions | Security Film & Door Reinforcements for Homes in Toronto',
-  description: 'Protect your home and family with Fort Knox Solutions. We specialize in security window film, door reinforcements, and home security upgrades across Toronto & the GTA. Free consultations available.',
+    description: 'Protect your home and family with Fort Knox Solutions. We specialize in security window film, door reinforcements, and home security upgrades across Toronto & the GTA. Free consultations available.',
     url: `https://fortknoxsolutions.ca/`,
   });
 }
@@ -22,13 +22,13 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <Hero /> 
-        <MainContent/>
-        <WhyChoose/>
+        <HomeContactForm />
+        <Hero />
+        <MainContent />
+        <WhyChoose />
         {/* <EmbedVideo/> */}
-        <ProcessSteps/>
-        <ProtectComponent/>  
-        <HomeContactForm/>      
+        <ProcessSteps />
+        <ProtectComponent />
       </main>
       <Footer />
     </div>

@@ -3,6 +3,8 @@ import Footer from '@/components/common/Footer';
 import PageBanner from '@/components/PageBanner';
 import ContactFormComponent from '@/components/ContactFormComponent';
 import { seoGenerateMetadata } from "@/components/Seo";
+import HomeContactForm from '@/components/HomeContactForm';
+
 export async function generateMetadata() {
   return seoGenerateMetadata({
     title: 'Contact Fort Knox Solutions | Free Home Security Consultation Toronto',
@@ -17,6 +19,7 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
+        <HomeContactForm/> 
         <PageBanner title="Contact Us" />       
         <ContactFormComponent/>
       </main>
