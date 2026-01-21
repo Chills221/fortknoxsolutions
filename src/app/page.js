@@ -8,6 +8,8 @@ import WhyChoose from '@/components/WhyChoose';
 import EmbedVideo from '@/components/EmbedVideo';
 import MainContent from '@/components/MainContent';
 import HomeContactForm from '@/components/HomeContactForm';
+import FAQComponent from '@/components/FAQComponent';
+import ClientLogos from '@/components/ClientLogos';
 
 export async function generateMetadata() {
   return seoGenerateMetadata({
@@ -22,13 +24,15 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <HomeContactForm />
         <Hero />
         <MainContent />
         <WhyChoose />
         {/* <EmbedVideo/> */}
         <ProcessSteps />
         <ProtectComponent />
+        <FAQComponent />
+        <ClientLogos />
+        <HomeContactForm />
       </main>
       <Footer />
     </div>

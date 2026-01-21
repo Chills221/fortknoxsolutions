@@ -18,9 +18,9 @@ export default function Services() {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <HomeContactForm/>      
-        <PageBanner title="Our Services" />       
+        <PageBanner title="Our Services" />
         <ServicesList/>
+        <HomeContactForm/>
       </main>
       <Footer />
     </div>

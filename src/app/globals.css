@@ -39,3 +39,58 @@ input[type=checkbox]:checked~.sideIconToggle>.horizontal {transition: all 0.3s; 
 input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-1 {transition: all 0.3s; width:100%; box-sizing: border-box;transform: rotate(135deg);margin-top: 8px; background-color: #f6b63f;}
 input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {transition: all 0.3s; width:100%; box-sizing: border-box;transform: rotate(-135deg); margin-top: -9px; background-color: #f6b63f;}
 .spinner.diagonal.part-1, .spinner.diagonal.part-2 {width:60%;}
+
+/* Client Logos Continuous Scroll Animation */
+@keyframes scroll-logos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-logos {
+  animation: scroll-logos 30s linear infinite;
+}
+
+/* Client Logos Responsive Visibility */
+.client-logos-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Mobile: Show 2 logos (2 * 300px + 1 * 32px = 632px) */
+@media (max-width: 768px) {
+  .client-logos-wrapper {
+    max-width: calc(2 * (300px + 32px));
+  }
+  
+  .client-logos-wrapper > div {
+    width: max-content;
+  }
+}
+
+/* Tablet: Show 3 logos (3 * 300px + 2 * 32px = 964px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .client-logos-wrapper {
+    max-width: calc(3 * (300px + 32px));
+  }
+  
+  .client-logos-wrapper > div {
+    width: max-content;
+  }
+}
+
+/* Desktop: Show 5 logos (5 * 300px + 4 * 32px = 1628px) */
+@media (min-width: 1025px) {
+  .client-logos-wrapper {
+    max-width: calc(5 * (300px + 32px));
+  }
+  
+  .client-logos-wrapper > div {
+    width: max-content;
+  }
+}

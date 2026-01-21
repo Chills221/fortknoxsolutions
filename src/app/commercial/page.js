@@ -19,10 +19,10 @@ export default function Services() {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <HomeContactForm />
         {/* <PageBanner title="Commercial Services" />        */}
         <CommertialSecurityComponent />
         <CommercialContactForm />
+        <HomeContactForm />
       </main>
       <Footer />
     </div>

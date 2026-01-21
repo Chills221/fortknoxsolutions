@@ -19,9 +19,9 @@ export default function FAQ() {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <HomeContactForm/>  
-        <PageBanner title="Frequently Asked Questions" />       
+        <PageBanner title="Frequently Asked Questions" />
         <FAQComponent/>
+        <HomeContactForm/>
       </main>
       <Footer />
     </div>

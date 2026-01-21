@@ -19,8 +19,8 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <HomeContactForm/> 
-        <PageBanner title="Contact Us" />       
+        {/* <HomeContactForm/>  */}
+        <PageBanner title="Contact Us" />
         <ContactFormComponent/>
       </main>
       <Footer />

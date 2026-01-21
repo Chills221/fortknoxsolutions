@@ -16,9 +16,9 @@ export default function AboutUs() {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <HomeContactForm/>      
-        <PageBanner title="About Us" />       
+        <PageBanner title="About Us" />
         <AboutComponent/>
+        <HomeContactForm/>
       </main>
       <Footer />
     </div>
